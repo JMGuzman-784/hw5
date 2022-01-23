@@ -6,7 +6,7 @@ Below users have the ability to utilize this list as a to-do list for their dail
 
 ## Screenshot
 
-![Work Day](./assets/images/Work_day_scheduler)
+![Work Day](./assets/images/Work_day_scheduler.png)
 
 ## Link to List
 
