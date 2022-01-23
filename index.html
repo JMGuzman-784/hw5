@@ -24,118 +24,119 @@
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead">January 14, 2020</p>
+      <h1 class="display-3">Work/Personal Day Scheduler</h1>
+      <p class="lead ptext">Below you will you be able to utilize this Daily To-do/Scheduler. The boxes are color coded. When the boxes are grey, it means that hour has past. When the boxes are a light blue color, it is the currnet hour. When it is green, It means the future hour.</p>
+      <p id="currentDay" class="lead dt"></p>
+      <p id="dayTime" class="lead dtZ"></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <!-- first hour -->
-        <div class="row" id="hour9" data-hour="9">
+      <!-- 1st hour -->
+        <div class="row" id="hour9am" data-hour="9">
             <!-- time -->
-            <div class="col-1">
+            <div class="col-1 hour d-inline-flex">
                 9AM
             </div>
             <!-- task -->
-            <textarea class="col-10 js-task">Enter tasks in this area</textarea>
+            <textarea id="task9am" class="col-10 border border-dark border-5 js-task" >Enter tasks in this area</textarea>
             <!-- save button -->
-            <button class="btn col-1 js-btn"><i class="far fa-save"></i></button>
-        </div>
+            <button id="btn-9am" class="btn col-1 js-btn saveBtn btn-9am"><i class="far fa-save"></i></button>
+        </div hour>
 
-        <!-- second hour -->
+        <!-- 2nd hour -->
         <div class="row" id="hour10" data-hour="10">
             <!-- time -->
-            <div class="col-1">
+            <div class="col-1 hour d-inline-flex">
                 10AM
             </div>
             <!-- task -->
-            <textarea class="col-10 js-task" >Enter tasks in this area</textarea>
+            <textarea id="task10am" class="col-10 border border-dark border-5 js-task" >Enter tasks in this area</textarea>
             <!-- save button -->
-            <button class="btn col-1 js-btn"><i class="far fa-save"></i></button>
+            <button id="btn-10am" class="btn col-1 js-btn saveBtn btn-10am"><i class="far fa-save"></i></button>
         </div>
 
-        <!-- second hour -->
+        <!-- 3rd hour -->
         <div class="row" id="hour11" data-hour="11">
             <!-- time -->
-            <div class="col-1">
+            <div class="col-1 hour d-inline-flex">
                 11AM
             </div>
             <!-- task -->
-            <textarea class="col-10 js-task" >Enter tasks in this area</textarea>
+            <textarea id="task11am" class="col-10 border border-dark border-5 js-task" >Enter tasks in this area</textarea>
             <!-- save button -->
-            <button class="btn col-1 js-btn"><i class="far fa-save"></i></button>
+            <button id="btn-11am" class="btn col-1 js-btn saveBtn btn-11am"><i class="far fa-save"></i></button>
         </div>
 
-        <!-- second hour -->
+        <!-- 4th hour -->
         <div class="row" id="hour12" data-hour="12">
             <!-- time -->
-            <div class="col-1">
+            <div class="col-1 hour d-inline-flex">
                 12PM
             </div>
             <!-- task -->
-            <textarea class="col-10 js-task" >Enter tasks in this area</textarea>
+            <textarea id="task12pm" class="col-10 border border-dark border-5 js-task" >Enter tasks in this area</textarea>
             <!-- save button -->
-            <button class="btn col-1 js-btn"><i class="far fa-save"></i></button>
+            <button id="btn-12pm" class="btn col-1 js-btn saveBtn btn-12pm"><i class="far fa-save"></i></button>
         </div>
 
-        <!-- second hour -->
+        <!-- 5th hour -->
         <div class="row" id="hour1" data-hour="1">
             <!-- time -->
-            <div class="col-1">
+            <div class="col-1 hour d-inline-flex">
                 1PM
             </div>
             <!-- task -->
-            <textarea class="col-10 js-task" >Enter tasks in this area</textarea>
+            <textarea id="task1pm" class="col-10 border border-dark border-5 js-task" >Enter tasks in this area</textarea>
             <!-- save button -->
-            <button class="btn col-1 js-btn"><i class="far fa-save"></i></button>
+            <button id="btn-1pm" class="btn col-1 js-btn saveBtn btn-1pm"><i class="far fa-save"></i></button>
         </div>
 
-        <!-- second hour -->
+        <!-- 6th hour -->
         <div class="row" id="hour2" data-hour="2">
             <!-- time -->
-            <div class="col-1">
+            <div class="col-1 hour d-inline-flex">
                 2PM
             </div>
             <!-- task -->
-            <textarea class="col-10 js-task" >Enter tasks in this area</textarea>
+            <textarea id="task2pm" class="col-10 border border-dark border-5 js-task" >Enter tasks in this area</textarea>
             <!-- save button -->
-            <button class="btn col-1 js-btn"><i class="far fa-save"></i></button>
+            <button id="btn-2pm" class="btn col-1 js-btn saveBtn btn-2pm"><i class="far fa-save"></i></button>
         </div>
 
-        <!-- second hour -->
+        <!-- 7th hour -->
         <div class="row" id="hour3" data-hour="3">
             <!-- time -->
-            <div class="col-1">
+            <div class="col-1 hour d-inline-flex">
                 3PM
             </div>
             <!-- task -->
-            <textarea class="col-10 js-task" >Enter tasks in this area</textarea>
+            <textarea id="task3pm" class="col-10 border border-dark border-5 js-task" >Enter tasks in this area</textarea>
             <!-- save button -->
-            <button class="btn col-1 js-btn"><i class="far fa-save"></i></button>
+            <button id="btn-3pm" class="btn col-1 js-btn saveBtn btn-3pm"><i class="far fa-save"></i></button>
         </div>
 
-        <!-- second hour -->
+        <!-- 8th hour -->
         <div class="row" id="hour4" data-hour="4">
             <!-- time -->
-            <div class="col-1">
+            <div class="col-1 hour d-inline-flex">
                 4PM
             </div>
             <!-- task -->
-            <textarea class="col-10 js-task" >Enter tasks in this area</textarea>
+            <textarea id="task4pm" class="col-10 border border-dark border-5 js-task" >Enter tasks in this area</textarea>
             <!-- save button -->
-            <button class="btn col-1 js-btn"><i class="far fa-save"></i></button>
+            <button id="btn-4pm" class="btn col-1 js-btn saveBtn btn-4pm"><i class="far fa-save"></i></button>
         </div>
 
-        <!-- second hour -->
+        <!-- 9th hour -->
         <div class="row" id="hour5" data-hour="5">
             <!-- time -->
-            <div class="col-1">
+            <div class="col-1 hour d-inline-flex">
                 5PM
             </div>
             <!-- task -->
-            <textarea class="col-10 js-task" >Enter tasks in this area</textarea>
+            <textarea id="task5pm" class="col-10 border border-dark border-5 js-task" >Enter tasks in this area</textarea>
             <!-- save button -->
-            <button class="btn col-1 js-btn"><i class="far fa-save"></i></button>
+            <button id="btn-5pm" class="btn col-1 js-btn saveBtn btn-5pm"><i class="far fa-save"></i></button>
         </div>
 
     </div>
